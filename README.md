@@ -14,5 +14,5 @@ Este repositorio contiene el desarrollo de la Actividad Sumativa de la Semana 3 
 ---
 
 ## Contenido del Repositorio
-* `Exp1_S3_Grupo16.docx`: Documento con las respuestas y capturas del modelo entidad-relación en notación Barker y Bachman.
+* `Exp1_S3_Gabriel.docx`: Documento con las respuestas y capturas del modelo entidad-relación en notación Barker y Bachman.
 * `modelo_base.rar`: Proyecto comprimido generado desde Oracle SQL Developer Data Modeler (archivo `.dmd` y su carpeta contenedora).
