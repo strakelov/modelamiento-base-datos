@@ -1,7 +1,7 @@
 # Actividad Formativa S4 - Modelamiento Base de Datos
 - **Nombre completo:** Gabriel Alejandro Gomez Pizarro
 - **Carrera:** Analista Programador Computacional
-- **Fecha de entrega:** 31/08/2026
+- **Fecha de entrega:** 07/09/2026
 - **Sección:** 004A
 - **Sede:** Campus Virtual
 
