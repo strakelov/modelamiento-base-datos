@@ -1,0 +1,261 @@
+CREATE TABLE MARCA (
+    id_marca NUMBER(2) CONSTRAINT MARCA_ID_NN NOT NULL,
+    descripcion VARCHAR2(20) CONSTRAINT MARCA_DESCRIPCION_NN NOT NULL,
+    CONSTRAINT MARCA_PK PRIMARY KEY (id_marca)
+);
+
+CREATE TABLE TIPO_AUTOMOVIL (
+    id_tipo CHAR(3) CONSTRAINT TIPO_AUTOMOVIL_ID_NN NOT NULL,
+    descripcion VARCHAR2(20) CONSTRAINT TIPO_AUTOMOVIL_DESCRIPCION_NN NOT NULL,
+    CONSTRAINT TIPO_AUTOMOVIL_PK PRIMARY KEY (id_tipo)
+);
+
+CREATE TABLE PAIS (
+    id_pais NUMBER(3) GENERATED ALWAYS AS IDENTITY (
+        START WITH 9
+        INCREMENT BY 3
+    ) CONSTRAINT PAIS_ID_NN NOT NULL,
+    nom_pais VARCHAR2(30) CONSTRAINT PAIS_NOMBRE_NN NOT NULL,
+    CONSTRAINT PAIS_PK PRIMARY KEY (id_pais)
+);
+
+CREATE TABLE SERVICIO (
+    id_servicio NUMBER(3) CONSTRAINT SERVICIO_ID_NN NOT NULL,
+    descripcion VARCHAR2(100) CONSTRAINT SERVICIO_DESCRIPCION_NN NOT NULL,
+    costo NUMBER(7) CONSTRAINT SERVICIO_COSTO_NN NOT NULL,
+    CONSTRAINT SERVICIO_PK PRIMARY KEY (id_servicio)
+);
+
+CREATE TABLE CLIENTE (
+    rut NUMBER(8) CONSTRAINT CLIENTE_RUT_NN NOT NULL,
+    dv CHAR(1) CONSTRAINT CLIENTE_DV_NN NOT NULL,
+    pnombre VARCHAR2(20) CONSTRAINT CLIENTE_PNOMBRE_NN NOT NULL,
+    snombre VARCHAR2(20),
+    apaterno VARCHAR2(20) CONSTRAINT CLIENTE_APATERNO_NN NOT NULL,
+    amaterno VARCHAR2(20) CONSTRAINT CLIENTE_AMATERNO_NN NOT NULL,
+    telefono VARCHAR2(12),
+    email VARCHAR2(40),
+    tipo_cli CHAR(1) CONSTRAINT CLIENTE_TIPO_CLI_NN NOT NULL,
+    CONSTRAINT CLIENTE_PK PRIMARY KEY (rut)
+);
+
+CREATE TABLE CIUDAD (
+    id_ciudad NUMBER(3) CONSTRAINT CIUDAD_ID_NN NOT NULL,
+    nom_ciudad VARCHAR2(30) CONSTRAINT CIUDAD_NOMBRE_NN NOT NULL,
+    cod_pais NUMBER(3) CONSTRAINT CIUDAD_COD_PAIS_NN NOT NULL,
+    CONSTRAINT CIUDAD_PK PRIMARY KEY (id_ciudad),
+    CONSTRAINT CIUDAD_PAIS_FK FOREIGN KEY (cod_pais) REFERENCES PAIS (id_pais)
+);
+
+CREATE TABLE SUCURSAL (
+    id_sucursal CHAR(3) CONSTRAINT SUCURSAL_ID_NN NOT NULL,
+    nom_sucursal VARCHAR2(20) CONSTRAINT SUCURSAL_NOMBRE_NN NOT NULL,
+    calle VARCHAR2(20) CONSTRAINT SUCURSAL_CALLE_NN NOT NULL,
+    num_calle NUMBER(4) CONSTRAINT SUCURSAL_NUM_CALLE_NN NOT NULL,
+    cod_ciudad NUMBER(3) CONSTRAINT SUCURSAL_COD_CIUDAD_NN NOT NULL,
+    CONSTRAINT SUCURSAL_PK PRIMARY KEY (id_sucursal),
+    CONSTRAINT SUCURSAL_CIUDAD_FK FOREIGN KEY (cod_ciudad) REFERENCES CIUDAD (id_ciudad)
+);
+
+CREATE TABLE ESTANDAR (
+    cl_rut NUMBER(8) CONSTRAINT ESTANDAR_CL_RUT_NN NOT NULL,
+    puntaje_fidelidad NUMBER(10) CONSTRAINT ESTANDAR_PUNTAJE_NN NOT NULL,
+    CONSTRAINT ESTANDAR_PK PRIMARY KEY (cl_rut),
+    CONSTRAINT ESTANDAR_CLIENTE_FK FOREIGN KEY (cl_rut) REFERENCES CLIENTE (rut)
+);
+
+CREATE TABLE PREMIUM (
+    cl_rut NUMBER(8) CONSTRAINT PREMIUM_CL_RUT_NN NOT NULL,
+    pesos_clientes NUMBER(10) CONSTRAINT PREMIUM_PESOS_CLIENTES_NN NOT NULL,
+    monto_credito NUMBER(10),
+    CONSTRAINT PREMIUM_PK PRIMARY KEY (cl_rut),
+    CONSTRAINT PREMIUM_CLIENTE_FK FOREIGN KEY (cl_rut) REFERENCES CLIENTE (rut)
+);
+
+CREATE TABLE MODELO (
+    id_modelo NUMBER(5) CONSTRAINT MODELO_ID_NN NOT NULL,
+    marca_id NUMBER(2) CONSTRAINT MODELO_MARCA_ID_NN NOT NULL,
+    descripcion VARCHAR2(20) CONSTRAINT MODELO_DESCRIPCION_NN NOT NULL,
+    CONSTRAINT MODELO_PK PRIMARY KEY (id_modelo, marca_id),
+    CONSTRAINT MODELO_MARCA_FK FOREIGN KEY (marca_id) REFERENCES MARCA (id_marca)
+);
+
+CREATE TABLE AUTOMOVIL (
+    patente CHAR(8) CONSTRAINT AUTOMOVIL_PATENTE_NN NOT NULL,
+    annio NUMBER(4) CONSTRAINT AUTOMOVIL_ANNIO_NN NOT NULL,
+    cant_puertas NUMBER(1) CONSTRAINT AUTOMOVIL_CANT_PUERTAS_NN NOT NULL,
+    km NUMBER(6) CONSTRAINT AUTOMOVIL_KM_NN NOT NULL,
+    color VARCHAR2(30) CONSTRAINT AUTOMOVIL_COLOR_NN NOT NULL,
+    cod_tipo_auto CHAR(3) CONSTRAINT AUTOMOVIL_COD_TIPO_AUTO_NN NOT NULL,
+    cod_modelo NUMBER(5) CONSTRAINT AUTOMOVIL_COD_MODELO_NN NOT NULL,
+    cod_marca NUMBER(2) CONSTRAINT AUTOMOVIL_COD_MARCA_NN NOT NULL,
+    cl_rut NUMBER(8) CONSTRAINT AUTOMOVIL_CL_RUT_NN NOT NULL,
+    CONSTRAINT AUTOMOVIL_PK PRIMARY KEY (patente),
+    CONSTRAINT AUTOMOVIL_TIPO_FK FOREIGN KEY (cod_tipo_auto) REFERENCES TIPO_AUTOMOVIL (id_tipo),
+    CONSTRAINT AUTOMOVIL_MODELO_FK FOREIGN KEY (cod_modelo, cod_marca) REFERENCES MODELO (id_modelo, marca_id),
+    CONSTRAINT AUTOMOVIL_CLIENTE_FK FOREIGN KEY (cl_rut) REFERENCES CLIENTE (rut)
+);
+
+CREATE TABLE MECANICO (
+    cod_mecanico NUMBER(5) GENERATED ALWAYS AS IDENTITY (
+        START WITH 460
+        INCREMENT BY 7
+    ) CONSTRAINT MECANICO_COD_NN NOT NULL,
+    pnombre VARCHAR2(20) CONSTRAINT MECANICO_PNOMBRE_NN NOT NULL,
+    snombre VARCHAR2(20) CONSTRAINT MECANICO_SNOMBRE_NN NOT NULL,
+    apaterno VARCHAR2(20) CONSTRAINT MECANICO_APATERNO_NN NOT NULL,
+    amaterno VARCHAR2(20) CONSTRAINT MECANICO_AMATERNO_NN NOT NULL,
+    bono_jefatura NUMBER(10),
+    sueldo NUMBER(10) CONSTRAINT MECANICO_SUELDO_NN NOT NULL,
+    monto_impuestos NUMBER(10) CONSTRAINT MECANICO_MONTO_IMPUESTOS_NN NOT NULL,
+    cod_supervisor NUMBER(5),
+    CONSTRAINT MECANICO_PK PRIMARY KEY (cod_mecanico),
+    CONSTRAINT MECANICO_MECANICO_FK FOREIGN KEY (cod_supervisor) REFERENCES MECANICO (cod_mecanico)
+);
+
+CREATE TABLE MANTENCION (
+    num_mantencion NUMBER(4) CONSTRAINT MANTENCION_NUM_NN NOT NULL,
+    cod_sucursal CHAR(3) CONSTRAINT MANTENCION_COD_SUCURSAL_NN NOT NULL,
+    fecha_ingreso DATE CONSTRAINT MANTENCION_FECHA_INGRESO_NN NOT NULL,
+    fecha_salida DATE,
+    patente_auto CHAR(8),
+    cod_mecanico NUMBER(5) CONSTRAINT MANTENCION_COD_MECANICO_NN NOT NULL,
+    costo_total NUMBER(7) CONSTRAINT MANTENCION_COSTO_TOTAL_NN NOT NULL,
+    estado VARCHAR2(15),
+    CONSTRAINT MANTENCION_PK PRIMARY KEY (num_mantencion),
+    CONSTRAINT MANTENCION_SUCURSAL_FK FOREIGN KEY (cod_sucursal) REFERENCES SUCURSAL (id_sucursal),
+    CONSTRAINT MANTENCION_AUTOMOVIL_FK FOREIGN KEY (patente_auto) REFERENCES AUTOMOVIL (patente),
+    CONSTRAINT MANTENCION_MECANICO_FK FOREIGN KEY (cod_mecanico) REFERENCES MECANICO (cod_mecanico)
+);
+
+CREATE TABLE DETALLE_SERVICIO (
+    mantencion_num NUMBER(4) CONSTRAINT DETALLE_SERVICIO_MANTENCION_NN NOT NULL,
+    cod_servicio NUMBER(3) CONSTRAINT DETALLE_SERVICIO_COD_NN NOT NULL,
+    descuento_serv NUMBER(4,3) CONSTRAINT DETALLE_SERVICIO_DESCUENTO_SERV_NN NOT NULL,
+    cantidad NUMBER(3) CONSTRAINT DETALLE_SERVICIO_CANTIDAD_NN NOT NULL,
+    CONSTRAINT DETALLE_SERVICIO_PK PRIMARY KEY (mantencion_num, cod_servicio),
+    CONSTRAINT DET_SERV_MANTENCION_FK FOREIGN KEY (mantencion_num) REFERENCES MANTENCION (num_mantencion),
+    CONSTRAINT DET_SERV_SERVICIO_FK FOREIGN KEY (cod_servicio) REFERENCES SERVICIO (id_servicio)
+);
+
+-- Eliminar Columna desde MANTENCION
+ALTER TABLE MANTENCION DROP CONSTRAINT MANTENCION_COSTO_TOTAL_NN;
+ALTER TABLE MANTENCION DROP COLUMN costo_total;
+
+-- Modificar llave foranea desde DETALLE_SERVICIO y agregar llave primaria en MANTENCION
+ALTER TABLE DETALLE_SERVICIO DROP CONSTRAINT DET_SERV_MATENCION_FK;
+ALTER TABLE DETALLE_SERVICIO DROP CONSTRAINT DETALLE_SERVICIO_PK;
+
+ALTER TABLE MANTENCION DROP CONSTRAINT MANTENCION_PK;
+ALTER TABLE MANTENCION ADD CONSTRAINT MANTENCION_PK PRIMARY KEY (num_mantencion, cod_sucursal);
+
+ALTER TABLE DETALLE_SERVICIO ADD cod_sucursal CHAR(3) NOT NULL;
+ALTER TABLE DETALLE_SERVICIO ADD CONSTRAINT DETALLE_SERVICIO_PK PRIMARY KEY (mantencion_num, cod_sucursal, cod_servicio);
+ALTER TABLE DETALLE_SERVICIO ADD CONSTRAINT DET_SERV_MATENCION_FK FOREIGN KEY (mantencion_num, cod_sucursal) REFERENCES MANTENCION (num_mantencion, cod_sucursal);
+
+-- Email de CLIENTE opcional pero unica entre registros
+ALTER TABLE CLIENTE ADD CONSTRAINT CLIENTE_EMAIL_UN UNIQUE (email);
+
+-- Código verificador de CLIENTE con restricción CHECK
+ALTER TABLE CLIENTE ADD CONSTRAINT CLIENTE_DV_CK CHECK (dv IN ('1','2','3','4','5','6','7','8','9','K'));
+
+-- Sueldo minimo para un MECANICO
+ALTER TABLE MECANICO ADD CONSTRAINT MECANICO_SUELDO_CK CHECK (sueldo >= 510000);
+
+-- Restricción CHECK para posibles estados de una MANTENCION
+ALTER TABLE MANTENCION ADD CONSTRAINT MANTENCION_ESTADO_CK CHECK (estado IN ('Reserva','Ingresado','Entregado','Anulado'));
+
+-- Secuencias de SERVICIO y CIUDAD
+CREATE SEQUENCE SEQ_SERVICIO START WITH 400 INCREMENT BY 2;
+CREATE SEQUENCE SEQ_CIUDAD START WITH 165 INCREMENT BY 5;
+
+-- Poblamiento de tabla PAIS
+INSERT INTO PAIS (nom_pais) VALUES ('Chile');
+INSERT INTO PAIS (nom_pais) VALUES ('Peru');
+INSERT INTO PAIS (nom_pais) VALUES ('Colombia');
+
+-- Poblamiento de tabla CIUDAD
+INSERT INTO CIUDAD VALUES (SEQ_CIUDAD.NEXTVAL, 'Santiago', 9);
+INSERT INTO CIUDAD VALUES (SEQ_CIUDAD.NEXTVAL, 'Lima', 12);
+INSERT INTO CIUDAD VALUES (SEQ_CIUDAD.NEXTVAL, 'Bogotá', 15);
+
+-- Poblamiento de tabla SUCURSAL
+INSERT INTO SUCURSAL VALUES ('S01', 'Providencia', 'Av. A. Varas', 234, 165);
+INSERT INTO SUCURSAL VALUES ('S02', 'Las 4 esquinas', 'Av. Latina', 669, 170);
+INSERT INTO SUCURSAL VALUES ('S03', 'Av. El Faro', 'El Cafetero', 900, 175);
+
+-- Poblamiento de tabla SERVICIO
+INSERT INTO SERVICIO VALUES (SEQ_SERVICIO.NEXTVAL, 'Cambio Luces', 45000);
+INSERT INTO SERVICIO VALUES (SEQ_SERVICIO.NEXTVAL, 'Desabolladura', 67000);
+INSERT INTO SERVICIO VALUES (SEQ_SERVICIO.NEXTVAL, 'Revisión Frenos', 30000);
+INSERT INTO SERVICIO VALUES (SEQ_SERVICIO.NEXTVAL, 'Cambio Puerta Trasera', 50000);
+
+-- Poblamiento de tabla MECANICO
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Jorge', 'Pablo', 'Soto', 'Sierpe', 5400000, 2759000, 223580, NULL);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Pedro', 'Jose', 'Manriquez', 'Corral', NULL, 759000, 23980, NULL);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Sandra', 'Josefa', 'Letelier', 'S.', 0, 659000, 22358, 460);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Felipe', 'M.', 'Vidal', 'A.', NULL, 759000, 23580, 460);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Jose', 'Miguel', 'Troncoso', 'B.', NULL, 659000, 44580, 474);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Juan', 'Pablo', 'Sánchez', 'R.', NULL, 859000, 23380, 474);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Carlos', 'Felipe', 'Soto', 'J.', 0, 597000, 23580, 474);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Alberto', 'P.', 'Cerda', 'Ramirez', NULL, 559000, 22380, 460);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Alejandra', 'Gabriela', 'Infanti', 'R.', NULL, 659000, 22380, 460);
+
+INSERT INTO MECANICO (pnombre, snombre, apaterno, amaterno, bono_jefatura, sueldo, monto_impuestos, cod_supervisor) 
+VALUES ('Roberto', 'Patricio', 'Gutierrez', 'Sosa', NULL, 859000, 22380, 460);
+
+-- Poblamiento de tabla MANTENCION
+INSERT INTO MANTENCION (num_mantencion, cod_sucursal, fecha_ingreso, fecha_salida, patente_auto, cod_mecanico, estado)
+VALUES (101, 'S01', TO_DATE('12-04-2023', 'DD-MM-YYYY'), NULL, NULL, 481, 'Reserva');
+
+INSERT INTO MANTENCION (num_mantencion, cod_sucursal, fecha_ingreso, fecha_salida, patente_auto, cod_mecanico, estado)
+VALUES (102, 'S02', TO_DATE('21-02-2023', 'DD-MM-YYYY'), TO_DATE('21-02-2023', 'DD-MM-YYYY'), NULL, 502, 'Entregado');
+
+INSERT INTO MANTENCION (num_mantencion, cod_sucursal, fecha_ingreso, fecha_salida, patente_auto, cod_mecanico, estado)
+VALUES (103, 'S02', TO_DATE('09-10-2023', 'DD-MM-YYYY'), NULL, NULL, 502, 'Anulado');
+
+INSERT INTO MANTENCION (num_mantencion, cod_sucursal, fecha_ingreso, fecha_salida, patente_auto, cod_mecanico, estado)
+VALUES (104, 'S03', TO_DATE('11-08-2023', 'DD-MM-YYYY'), TO_DATE('18-08-2023', 'DD-MM-YYYY'), NULL, 509, 'Entregado');
+
+INSERT INTO MANTENCION (num_mantencion, cod_sucursal, fecha_ingreso, fecha_salida, patente_auto, cod_mecanico, estado)
+VALUES (105, 'S03', NULL, TO_DATE('03-12-2023', 'DD-MM-YYYY'), NULL, 509, 'Ingresado');
+
+-- Informe 1 de mecanicos
+SELECT
+    cod_mecanico AS "ID_MECANICO",
+    pnombre || ' ' || apaterno AS "NOMBRE_MECANICO",
+    sueldo AS "SALARIO",
+    monto_impuestos AS "IMPUESTO_ACTUAL",
+    monto_impuestos * 0.8 AS "IMPUESTO_REBAJADO",
+    sueldo - (monto_impuestos * 0.8) AS "SUELDO_CON_IMPUESTO_REBAJADO"
+FROM MECANICO
+WHERE bono_jefatura IS NULL AND monto_impuestos < 40000
+ORDER BY monto_impuestos DESC, apaterno ASC;
+
+-- Informe 2  de mecanicos
+SELECT
+    cod_mecanico AS "IDENTIFICADOR",
+    pnombre || ' ' || snombre || ' ' || apaterno AS "MECANICO",
+    sueldo AS "SUELDO_ACTUAL",
+    sueldo * 0.05 AS "AJUSTE",
+    sueldo + (sueldo * 0.05) AS "SUELDO_REAJUSTADO"
+FROM MECANICO
+WHERE (sueldo BETWEEN 600000 AND 900000) OR cod_supervisor IS NULL
+ORDER BY sueldo ASC, 2 DESC;
