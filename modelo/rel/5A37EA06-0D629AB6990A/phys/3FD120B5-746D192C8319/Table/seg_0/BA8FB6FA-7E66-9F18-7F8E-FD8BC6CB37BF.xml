@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TRABAJADOR" directorySegmentName="seg_0" id="BA8FB6FA-7E66-9F18-7F8E-FD8BC6CB37BF">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="snombre" id="133D8EC2-EA11-20DB-6D2D-62F27ADDCA2B">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sueldo_base" id="1EBBD77F-31E8-DCAA-ED8E-33CAC97BAFEA">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="apaterno" id="4078D344-111A-F2F6-2CEF-28D5C368125C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="genero" id="41838468-4A12-0014-A265-B4E22B981CFD">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_nacimiento" id="7A3704C2-BF06-4423-E267-A01C733F382B">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_comuna" id="8590677F-A831-4E36-B612-C3E8B594401C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="estado_civil" id="9CD39735-B438-A13B-FDA8-2BBA42EDDF27">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dv" id="B329918A-62C6-DE84-5524-F40E55B28C2C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_inscripcion" id="C5104E56-65EF-7F16-A4C1-4BD75EA45CF6">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="direccion" id="C701C3BA-A241-3CB2-AE06-E229B9B1FCC4">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pnombre" id="CA440390-9A7E-2E0F-6144-38987FF91353">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="rut" id="E0D48CB4-66B5-1815-181E-C01A6A2A7D49">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NACIONALIDAD_id_nacion" id="EB3C4FB2-4A23-74AC-7E42-1364CB98CB5C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 19:40:39 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefono_movil" id="F3C0841B-3184-1A4B-5E0C-DA18E7CE4B3C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="amaterno" id="FADF71E0-DC20-5C6F-9E0A-E3087D7928DE">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TRABAJADOR_COMUNA_FK" id="0276FE09-B974-4206-0A08-538DA4EB3D38">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TRABAJADOR_NACIONALIDAD_FK" id="DD83CFF7-D53A-DE13-F882-E65F8359F64D">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 19:40:39 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TRABAJADOR_PK" id="EAAC84D3-59E8-055D-607E-B0303B609F7D">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="TRABAJADOR_SUELDO_CK" id="7E11AC49-8A6D-F119-B304-351E1BFF9A55">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="TRABAJADOR_GENERO_CK" id="C995958F-37CF-D90C-AA46-9855DCCF1BBB">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="TRABAJADOR_DV_CK" id="F7589823-AE0F-2816-8E86-1964A0A5F63E">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="TRABAJADOR_RUT_UN" id="E7DFE9FB-03B5-4521-D6E8-E953C09865F5">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

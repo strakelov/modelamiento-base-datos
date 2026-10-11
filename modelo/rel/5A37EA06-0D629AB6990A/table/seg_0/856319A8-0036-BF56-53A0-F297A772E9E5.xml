@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="856319A8-0036-BF56-53A0-F297A772E9E5" name="ASOCIACION">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>5A3415E2-7A34-7F8C-A7C8-F3C1C015A9A4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asociacion" id="DDF9B053-EE08-D9C7-69A8-EC5F6EE0E53B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>4233CDC5-F9FD-8488-0748-49FC60D1263F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_asociacion" id="5A7D3588-0925-FBA9-8F37-CBAFCF321413">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>086397FB-E778-3283-2F2B-9345DC5BF8AF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0C9FF9DC-A857-8DAA-66F0-7B9BC1C91590</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="BE39F3A1-B06C-8D01-A8A5-E4821267BA86">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>831D1514-D5F2-7A44-8A7A-9FC9FA6FD250</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F7E86B4B-14E6-50DC-E1FD-F7C21BACB3F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_asociacion" id="EE60A62E-1CAA-4894-166C-297579FA88C3">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>D7923F1E-05C5-5A45-3C36-DD8BC7C18C44</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411EFF99-3DB7-500E-51C5-6A8655FDB23E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BC57141-50C5-D51C-B294-DE7ECBC183E9" name="ASOCIACION_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>A52303D8-01F1-F929-207C-4E88493C760E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDF9B053-EE08-D9C7-69A8-EC5F6EE0E53B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ASOCIACION_TIPO_CK" directorySegmentName="seg_0" id="2FC2DE9A-3BD5-B2E2-503A-E6D2CFE6F61B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>289EF997-4AE6-9BA4-8912-EEA78726C8D6</importedID>
+<rule><![CDATA[tipo_asociacion IN ('P', 'A')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ASOCIACION_FECHA_CK" directorySegmentName="seg_0" id="AAE1471C-5869-2864-EF1F-36DEEF4CF3BF">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>61D15DA5-760A-FAA9-EC09-6FCD6ABDA8E2</importedID>
+<rule><![CDATA[fecha_creacion >= TO_DATE('1980-12-31', 'YYYY-MM-DD')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

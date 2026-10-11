@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0021E4D-92CA-E4A7-792D-373F464520CF" name="JUGADOR_IDIOMA">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>A93E3E44-2D30-8554-5788-BA4FAB843563</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_inscripcion" id="9A190CF0-2C8F-490E-DB01-358EFC8EAF59">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>196C6E2C-E6C7-46B9-965D-A6AF9243984E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39767466-6988-58AE-3A71-16C9CE89D678</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A096397-4D7D-2E4B-74D4-5E27512854CF" referredColumn="F43348C9-D7F7-DD81-51DD-29D442FD73AC"/>
+</associations>
+</Column>
+<Column name="id_idioma" id="F3FBA2AF-8688-0A06-F268-9F03D945519B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>62EC3E31-079F-600C-E945-4FB406E8C806</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A58A647D-A69A-3E72-EFB2-DD758E677684</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1175EB8-4150-172C-0417-7A78EE78DA65" referredColumn="E98AE969-2D6A-16E8-236F-C3BA646D6891"/>
+</associations>
+</Column>
+<Column name="nivel_dominio" id="01C46D39-D46F-5CCE-F056-D002A7E65E57">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>F07AF678-8F83-7896-8B53-6B833E39171A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A0E9CFF8-9886-912E-B6AB-7F4CF34D791A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C70B97F8-D67F-D5BB-9647-7C13D5CB4FA8" name="JUGADOR_IDIOMA_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>3A3A0CC8-5C49-DA41-CFDF-BEA18B9127D2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A190CF0-2C8F-490E-DB01-358EFC8EAF59"/>
+<colUsage columnID="F3FBA2AF-8688-0A06-F268-9F03D945519B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CD33535-FEAC-ABF9-C769-06699F79BE7B" name="JUGADOR_IDIOMA_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3FBA2AF-8688-0A06-F268-9F03D945519B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A961404-8EC7-26F4-7E56-506806804A00" name="JUGADOR_IDIOMA_JUGADOR_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A190CF0-2C8F-490E-DB01-358EFC8EAF59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

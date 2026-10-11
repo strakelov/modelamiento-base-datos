@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F72868FD-12D3-7C6D-A35B-E8BD291F0CF9" name="JUGADOR">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>64107A57-51A7-B3CD-71CB-44A3B4B31AA7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_inscripcion" id="F43348C9-D7F7-DD81-51DD-29D442FD73AC">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>DAC96F0B-45A6-9B37-59BE-406034C4028C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39767466-6988-58AE-3A71-16C9CE89D678</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4BD9853-2039-6D36-B003-6F38E1F6BCED" referredColumn="C5104E56-65EF-7F16-A4C1-4BD75EA45CF6"/>
+</associations>
+</Column>
+<Column name="puesto_campo" id="F87E5A29-73EC-B2D2-82BF-97ADDDB82257">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>52CD0183-3EEB-F7A7-2C0F-A41072F011D4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D177AF73-9F0E-16C2-2A7C-FE0A064854F7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_premios" id="EB2190A5-BF5B-FFB8-B490-8827CB326988">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>05418C0D-12C8-8A60-655D-043AC2431CE1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9647A2CE-3123-8230-0DF6-28691EB2A7B2</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_asociacion" id="41E43C3E-FCF8-6528-4850-12BB30E983E0">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>A2779307-5285-4F95-DEAB-2B3736EC4E11</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E7D1202-742E-0A1B-14EE-61ECC7C4287E" referredColumn="DDF9B053-EE08-D9C7-69A8-EC5F6EE0E53B"/>
+</associations>
+</Column>
+<Column name="id_escuela" id="ADD11B01-8CE9-5DB8-4832-1B5812A4CC3F">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>6C26F09B-2068-A745-E42A-117B47E81131</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43DBEAA7-68A8-D0AA-405F-BEE90C64AEE3" referredColumn="4AE52FB4-14C5-392F-04BD-C0F154583806"/>
+</associations>
+</Column>
+<Column name="anio_fin" id="EF71C9D5-A038-9A3D-EAEC-DC63839970D2">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>4F8EE747-119D-469B-AF40-686F376F5528</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>260CFE59-BBB4-CBEA-4B1D-A9DA8C220375</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76354169-1DF0-F19E-2F09-E74D4F2A1B6A" name="JUGADOR_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>556E64CB-5C0B-3902-8BAA-EE3FF0E328AB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43348C9-D7F7-DD81-51DD-29D442FD73AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC5CB596-CD8E-4C4B-2C34-A584738250D4" name="JUGADOR_ASOCIACION_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41E43C3E-FCF8-6528-4850-12BB30E983E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04F56188-08B1-08B2-9A24-0B29FF7078DC" name="JUGADOR_ESCUELA_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADD11B01-8CE9-5DB8-4832-1B5812A4CC3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4550110C-BD23-37F6-DEA2-42DA0C208EA2" name="JUGADOR_TRABAJADOR_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43348C9-D7F7-DD81-51DD-29D442FD73AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

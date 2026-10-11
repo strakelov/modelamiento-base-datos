@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BF7A408-593C-EB5E-1BA0-20CE91184240" name="IDIOMA">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>0DF67E0D-3FE7-0B6B-220B-ED0A17D90D55</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_idioma" id="E98AE969-2D6A-16E8-236F-C3BA646D6891">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>65F1127A-251F-7BAB-BBE8-FFAA5B78A9F2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A58A647D-A69A-3E72-EFB2-DD758E677684</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_idioma" id="A79E34FC-023E-39E9-5D60-25CECF0DA51C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>C0ADDA63-02D7-8931-67B6-07EB76113C24</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D177AF73-9F0E-16C2-2A7C-FE0A064854F7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B25F1C5B-EFAB-74A8-735B-70F501C2C818" name="pk_idioma">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>F9814BAE-ECE2-80DA-C933-19FE33DD454D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E98AE969-2D6A-16E8-236F-C3BA646D6891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

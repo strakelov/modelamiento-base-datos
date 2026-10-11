@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71597EE7-5CE4-2DC1-F6B1-2B179C76F6F8" name="COMUNA">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>88B64C23-81BC-2B42-1782-8982EFEDCD7B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comuna" id="50A1F349-5D0B-4621-A89B-41D0ADC5707A">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>EA93A743-8C3C-BD96-EC30-1AA621E20B2D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_region" id="56A5148F-CFF5-113F-FE7E-2521F1223F17">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>AB437D7B-D4AC-C346-34AA-8D0E195A1707</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="484EC97B-BFF1-5B9C-D085-7978461F34D9" referredColumn="4D760D5E-681D-DF86-C3FC-04BFF338AE64"/>
+</associations>
+</Column>
+<Column name="nombre" id="1297A590-CBB7-76D3-9C82-15F5ADF9785D">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>0763C498-C331-920B-EB9A-48F2F079600C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0C9FF9DC-A857-8DAA-66F0-7B9BC1C91590</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D4D660C-DFC3-B76D-2771-163D2BB341EF" name="COMUNA_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>990B6AC4-FDBF-AC3A-68D2-F85EED838AE9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50A1F349-5D0B-4621-A89B-41D0ADC5707A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96BA083D-BA92-B3BC-C372-FCF6D1D398FE" name="COMUNA_REGION_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56A5148F-CFF5-113F-FE7E-2521F1223F17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PLANTA_CLUB_FK" directorySegmentName="seg_0" id="2C362C35-FAAF-4722-14F3-05BCB00A06C4">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>5F2B37CE-A1CD-35A4-9D8F-6AAB2B80057E</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<sourcePk>70147A22-1628-6CAD-5B32-17D86D97F43C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>09B1ACFD-4359-7324-DE5B-570BCC39D2F2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5CF7F9C7-8A9A-2B09-5064-B4A7B2D097FE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09B1ACFD-4359-7324-DE5B-570BCC39D2F2" name="CLUB FUTBOL">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>53FE40EB-1011-AFC1-6FCD-F62F1A2339EE</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_club" id="5F241AA4-2FC5-E552-4D79-EA92D2B748CE">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>54095477-B9F8-3C7D-A93C-4E76457BFF5C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_club" id="3743BF4D-83FA-E6CF-F035-E59BADF7AAE8">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>C5DFA1EE-D0F4-F30F-47A2-26C6CC038C4C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0C9FF9DC-A857-8DAA-66F0-7B9BC1C91590</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patrimonio" id="2FB6EF89-4FAD-AF7A-EF0B-97FF0DB2E609">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>D8A77975-2F4B-B24B-299D-FCDD74F5FD89</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>316C4135-8F71-11F6-7F5C-32459245546D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ubicacion_calle" id="B7DA9C72-B0C0-CD5F-3E6B-CD46355D501F">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>D9A4083D-76A3-3526-623A-395F07E449F5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BC9A1881-CD60-0AA4-E2DD-C348E70EC3D0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_club" id="7E0336FE-4498-4607-FC40-3F3105C4B4DE">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>E2B06404-1D7B-B66B-5CF0-B44CB1F0464D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>31FF6767-91A6-D911-D28D-7F185D7556AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70147A22-1628-6CAD-5B32-17D86D97F43C" name="CLUB FUTBOL PK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>5CF5157F-D57D-D3E4-50CB-7C8B6DD29B8B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F241AA4-2FC5-E552-4D79-EA92D2B748CE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CDF76314-9186-BB34-8ACB-B79A0DB78471" name="CLUB NOMBRE UN">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>F57CB08E-F2CC-90E0-B2ED-5D73AA47CC1D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3743BF4D-83FA-E6CF-F035-E59BADF7AAE8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

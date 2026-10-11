@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JUGADOR_ASOCIACION_FK" directorySegmentName="seg_0" id="C5ED1BDC-EE37-63B2-183E-C9AAF480F1E7">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>0E7D1202-742E-0A1B-14EE-61ECC7C4287E</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<sourcePk>EB2C78FC-BCE4-C0B9-F001-DAF885CB88DC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0047BD22-7DC1-45D7-923E-A34919FF24C1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>659C4F20-EF23-862A-4421-2B89ACD328F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

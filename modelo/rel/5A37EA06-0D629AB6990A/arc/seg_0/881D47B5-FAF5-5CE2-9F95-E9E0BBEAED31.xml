@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="881D47B5-FAF5-5CE2-9F95-E9E0BBEAED31" name="FKArc_1">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 19:23:07 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>BA8FB6FA-7E66-9F18-7F8E-FD8BC6CB37BF</table>
+<fkeys>
+<fkeyID>E16C59BB-0720-FB8E-D7D7-AD1D7A88D2A3</fkeyID>
+<fkeyID>B4BD9853-2039-6D36-B003-6F38E1F6BCED</fkeyID>
+</fkeys>
+</FKArc>

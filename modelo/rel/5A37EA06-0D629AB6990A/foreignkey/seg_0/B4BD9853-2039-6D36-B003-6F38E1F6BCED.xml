@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B4BD9853-2039-6D36-B003-6F38E1F6BCED" containerWithKeyObject="F72868FD-12D3-7C6D-A35B-E8BD291F0CF9" localFKIndex="4550110C-BD23-37F6-DEA2-42DA0C208EA2" name="JUGADOR_TRABAJADOR_FK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>00EDF2BA-6EC3-B080-65B2-A97DCB94C2A6</importedID>
+<referredTableLongName>TRABAJADOR</referredTableLongName>
+<arc>881D47B5-FAF5-5CE2-9F95-E9E0BBEAED31</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA8FB6FA-7E66-9F18-7F8E-FD8BC6CB37BF</referredTableID>
+<keyObject>EAAC84D3-59E8-055D-607E-B0303B609F7D</keyObject>
+<referredKeyID>EAAC84D3-59E8-055D-607E-B0303B609F7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_inscripcion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

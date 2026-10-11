@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B91F2AB0-69A3-D6D9-7CA9-37A582BD078E" name="PERSONAL_PLANTA">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>20476767-1B9E-8B7F-F916-D1DEE5EBC46A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_inscripcion" id="B163AAF2-30CF-18E6-84F7-E1E5FDB1BDD7">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>F13031E8-7C28-1C60-9703-46925B015531</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39767466-6988-58AE-3A71-16C9CE89D678</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E16C59BB-0720-FB8E-D7D7-AD1D7A88D2A3" referredColumn="C5104E56-65EF-7F16-A4C1-4BD75EA45CF6"/>
+</associations>
+</Column>
+<Column name="horas_trabajadas" id="F704CDF2-C4AC-0A9F-743D-95515E83979C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>58AE2220-322F-573A-CF3C-EA4408EB72DA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>260CFE59-BBB4-CBEA-4B1D-A9DA8C220375</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_hora_extra" id="88B81303-5E8B-1FBA-1263-4CE87D6573D6">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>F9CA7287-55BD-3C35-5238-8B3565EE9D33</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F8065154-C940-6548-385C-DEE888D324C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_club" id="5215DCED-9910-4942-59A6-A8E95DF67FCF">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>37DDBD13-976E-1D37-4C94-0CE83898E30A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F2B37CE-A1CD-35A4-9D8F-6AAB2B80057E" referredColumn="54095477-B9F8-3C7D-A93C-4E76457BFF5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8F708C8-74EF-11C7-E6B2-0F6901719FC5" name="PERSONAL_PLANTA_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>ED2640B8-DF00-B870-033A-DB06A8C13B4F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B163AAF2-30CF-18E6-84F7-E1E5FDB1BDD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6BE04A4-17F6-8480-CE50-EA7F9D83B4E2" name="PLANTA_CLUB_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5215DCED-9910-4942-59A6-A8E95DF67FCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5750417-1129-713A-71C1-9AD3EE247E36" name="PLANTA_TRABAJADOR_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B163AAF2-30CF-18E6-84F7-E1E5FDB1BDD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

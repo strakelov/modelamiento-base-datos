@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F2B37CE-A1CD-35A4-9D8F-6AAB2B80057E" containerWithKeyObject="B91F2AB0-69A3-D6D9-7CA9-37A582BD078E" localFKIndex="A6BE04A4-17F6-8480-CE50-EA7F9D83B4E2" name="PLANTA_CLUB_FK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>9C7E6FE9-C144-0118-D2A1-EB1E940D367C</importedID>
+<referredTableLongName>CLUB_FUTBOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>53FE40EB-1011-AFC1-6FCD-F62F1A2339EE</referredTableID>
+<keyObject>5CF5157F-D57D-D3E4-50CB-7C8B6DD29B8B</keyObject>
+<referredKeyID>5CF5157F-D57D-D3E4-50CB-7C8B6DD29B8B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_club</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B73F45B-5191-7DE9-49D5-63AE5FBA1EB7" name="JUGADOR_HISTORIAL">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>4813D726-E737-057E-9330-5358719196D6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_inscripcion" id="FE189223-9FE5-D808-533B-82B61B420F0B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>A3ED3423-9511-4C5D-ACDB-057AD8B23B82</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39767466-6988-58AE-3A71-16C9CE89D678</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F970F71-79AB-AC88-E36B-3DF91CCF3417" referredColumn="F43348C9-D7F7-DD81-51DD-29D442FD73AC"/>
+</associations>
+</Column>
+<Column name="id_club" id="0657F852-A362-22AC-E565-D91560FB0A8A">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>497EE6D1-42A8-27B9-D056-83EED1512F6B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9106E615-8156-3351-DC42-6316F5EEC94E" referredColumn="54095477-B9F8-3C7D-A93C-4E76457BFF5C"/>
+</associations>
+</Column>
+<Column name="fecha_inicio" id="5E788F78-F854-D715-ABB9-4EEB59C43FF6">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>E6FE08B4-034E-8E0F-85A8-C6C52CFCFC82</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F7E86B4B-14E6-50DC-E1FD-F7C21BACB3F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="1CDBF2E5-B711-5E39-A126-901036CBAC68">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>D58502C9-F4D9-DB02-7AA1-9AD687A32010</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F7E86B4B-14E6-50DC-E1FD-F7C21BACB3F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8BB02C94-E1A0-408B-4A99-DC3BAD31F618" name="JUGADOR_HISTORIAL_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>9EE6E931-5934-EE29-4DF5-6599AD9D5DC6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE189223-9FE5-D808-533B-82B61B420F0B"/>
+<colUsage columnID="0657F852-A362-22AC-E565-D91560FB0A8A"/>
+<colUsage columnID="5E788F78-F854-D715-ABB9-4EEB59C43FF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21AEE0C1-6719-D61B-9944-06CD99269437" name="JUGADOR_HISTORIAL_CLUB_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0657F852-A362-22AC-E565-D91560FB0A8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB87B34D-0363-AC82-4027-AB52E31704D3" name="JUGADOR_HISTORIAL_JUGADOR_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE189223-9FE5-D808-533B-82B61B420F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

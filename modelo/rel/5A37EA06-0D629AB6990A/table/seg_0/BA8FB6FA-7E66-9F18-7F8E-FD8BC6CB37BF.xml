@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA8FB6FA-7E66-9F18-7F8E-FD8BC6CB37BF" name="TRABAJADOR">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>C66604C2-C58A-4A41-173A-753E1C8ED8FA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_inscripcion" id="C5104E56-65EF-7F16-A4C1-4BD75EA45CF6">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>917A7AA8-8292-13CD-05B8-726C73DEB303</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39767466-6988-58AE-3A71-16C9CE89D678</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="E0D48CB4-66B5-1815-181E-C01A6A2A7D49">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>1B66FD66-466A-11BB-6283-94E37BE32A4E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F8065154-C940-6548-385C-DEE888D324C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dv" id="B329918A-62C6-DE84-5524-F40E55B28C2C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>DC2E285B-829D-5621-22FA-391B02DCA122</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411EFF99-3DB7-500E-51C5-6A8655FDB23E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="CA440390-9A7E-2E0F-6144-38987FF91353">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>0A68B21C-3B42-6157-1F4E-4E4B8D660B9D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9E827A6F-207B-9604-B4E7-F93A0FD4012E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="snombre" id="133D8EC2-EA11-20DB-6D2D-62F27ADDCA2B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>35735528-118C-0F49-2D55-4F1102F22909</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9E827A6F-207B-9604-B4E7-F93A0FD4012E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apaterno" id="4078D344-111A-F2F6-2CEF-28D5C368125C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>24E2621C-E8DF-1CC6-CE21-077EBE6BCDBC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9E827A6F-207B-9604-B4E7-F93A0FD4012E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amaterno" id="FADF71E0-DC20-5C6F-9E0A-E3087D7928DE">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>EFD5721C-6B46-6807-BAA2-D3FDDEFC7853</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9E827A6F-207B-9604-B4E7-F93A0FD4012E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sueldo_base" id="1EBBD77F-31E8-DCAA-ED8E-33CAC97BAFEA">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>6D74A7DD-6C98-1874-6FF6-3FA1FA4ADCDE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8894DA5-322A-A239-9AF7-22BC1E50C782</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="7A3704C2-BF06-4423-E267-A01C733F382B">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>5024B381-A76D-2D4B-0426-AAD7B840EB5B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F7E86B4B-14E6-50DC-E1FD-F7C21BACB3F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="41838468-4A12-0014-A265-B4E22B981CFD">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>BD62F175-52E4-99AC-A7D6-9078E9CF4A9F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411EFF99-3DB7-500E-51C5-6A8655FDB23E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_civil" id="9CD39735-B438-A13B-FDA8-2BBA42EDDF27">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>912641B0-64B0-5A8D-ABDE-358F655F7668</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>31FF6767-91A6-D911-D28D-7F185D7556AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_movil" id="F3C0841B-3184-1A4B-5E0C-DA18E7CE4B3C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>CF3E81D1-6193-9DE1-552E-D9FBE914E9A2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8BB78A1A-66D8-458E-AE00-64A15FA52CAE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="C701C3BA-A241-3CB2-AE06-E229B9B1FCC4">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>4EF9EE81-29D9-84A6-1C7E-09C7891C112E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BC9A1881-CD60-0AA4-E2DD-C348E70EC3D0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comuna" id="8590677F-A831-4E36-B612-C3E8B594401C">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>1EA38A05-48B5-F380-0208-A4C52C2FB246</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D1DCEBED-7793-9B80-79C8-27ACC4319BE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A60B43D-34D2-8ECB-3AA0-6E9659E39E6F" referredColumn="50A1F349-5D0B-4621-A89B-41D0ADC5707A"/>
+</associations>
+</Column>
+<Column name="NACIONALIDAD_id_nacion" id="EB3C4FB2-4A23-74AC-7E42-1364CB98CB5C">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 19:40:39 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B6D63C1C-C568-CE6D-6C30-3D1D8D7AF4A4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5901DE42-93E5-DA5D-5EE7-A6C5C2F6A51D" referredColumn="B6315505-1746-0E7F-F162-F58509027F06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAAC84D3-59E8-055D-607E-B0303B609F7D" name="TRABAJADOR_PK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>588AB6A5-7EDF-DA64-C992-5D9EE94E811B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5104E56-65EF-7F16-A4C1-4BD75EA45CF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7DFE9FB-03B5-4521-D6E8-E953C09865F5" name="TRABAJADOR_RUT_UN">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>B7C5080F-2F42-3DDF-77CC-98DEB8283DC1</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0D48CB4-66B5-1815-181E-C01A6A2A7D49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0276FE09-B974-4206-0A08-538DA4EB3D38" name="TRABAJADOR_COMUNA_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8590677F-A831-4E36-B612-C3E8B594401C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD83CFF7-D53A-DE13-F882-E65F8359F64D" name="TRABAJADOR_NACIONALIDAD_FK">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 19:40:39 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB3C4FB2-4A23-74AC-7E42-1364CB98CB5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="TRABAJADOR_DV_CK" directorySegmentName="seg_0" id="F7589823-AE0F-2816-8E86-1964A0A5F63E">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>F8DC6EE7-0BBF-4BE6-F182-AB088A1734B5</importedID>
+<rule><![CDATA[dv IN ('0','1','2','3','4','5','6','7','8','9','K')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="TRABAJADOR_GENERO_CK" directorySegmentName="seg_0" id="C995958F-37CF-D90C-AA46-9855DCCF1BBB">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>49F0A44E-0BB1-79A1-6263-7FDB13F98B6B</importedID>
+<rule><![CDATA[genero IN ('M','F')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="TRABAJADOR_SUELDO_CK" directorySegmentName="seg_0" id="7E11AC49-8A6D-F119-B304-351E1BFF9A55">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>D8585BA4-BBCF-7B7A-F8EE-95E23FAB2F9B</importedID>
+<rule><![CDATA[sueldo_base >= 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TRABAJADOR_COMUNA_FK" directorySegmentName="seg_0" id="98EDFDF4-DBE5-72FE-6D59-CEF5E0C579C9">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:38:56 UTC</createdTime>
+<generatorID>9A60B43D-34D2-8ECB-3AA0-6E9659E39E6F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" value="true"/>
+</engineerTo>
+<sourcePk>0B6957BE-1621-AA00-465B-F4E747E97913</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>27142B2D-71B6-375D-236F-ADE7D1FE2E27</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98CBB964-8BE3-1DDB-C18A-F50041EA1B5E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

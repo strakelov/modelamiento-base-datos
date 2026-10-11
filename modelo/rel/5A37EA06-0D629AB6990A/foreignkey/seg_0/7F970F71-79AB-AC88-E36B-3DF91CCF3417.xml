@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F970F71-79AB-AC88-E36B-3DF91CCF3417" containerWithKeyObject="5B73F45B-5191-7DE9-49D5-63AE5FBA1EB7" localFKIndex="CB87B34D-0363-AC82-4027-AB52E31704D3" name="JUGADOR_HISTORIAL_JUGADOR_FK">
+<sourceDDLFile>PRY2204_S9.sql</sourceDDLFile>
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:35:52 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<importedID>4251A28C-51BB-E5EE-F839-6385DFDAED70</importedID>
+<referredTableLongName>JUGADOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F72868FD-12D3-7C6D-A35B-E8BD291F0CF9</referredTableID>
+<keyObject>76354169-1DF0-F19E-2F09-E74D4F2A1B6A</keyObject>
+<referredKeyID>76354169-1DF0-F19E-2F09-E74D4F2A1B6A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_inscripcion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

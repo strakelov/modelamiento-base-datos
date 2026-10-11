@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="5A37EA06-7505-EE9F-2EFE-0D629AB6990A" mainViewID="14375EF4-EC17-5542-5015-9ACEF97A1351">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:30:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>PRY2204_S9.sql</fileName>
+<pathName>C:\Users\gabri\Downloads</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

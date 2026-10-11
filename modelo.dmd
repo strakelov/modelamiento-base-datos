@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo" id="5A8A8F9E-A846-8E28-16A3-0FF92BDD8B39" version="3.5">
+<createdBy>strakelov</createdBy>
+<createdTime>2026-10-11 17:30:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5A8A8F9E-A846-8E28-16A3-0FF92BDD8B39</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F3750007-85D4-C5D4-BD34-49D8414001E7">
+<designStoragePath>C:\PRY2204_S9</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
